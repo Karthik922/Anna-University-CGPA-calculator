@@ -1,0 +1,156 @@
+<html>
+<head><title>GPA</title>
+<style type="text/css">
+table
+{
+font-size:20px;
+}
+</style>
+<script type="text/javascript">
+var g1,g2,g3,g4,g5,g6,g7,g8,tot;
+function GetGredits1(getgreditvalue)
+{   
+	Number(getgreditvalue);
+	 g1=(3*getgreditvalue);
+	
+}
+function GetGredits2(getgreditvalue)
+{
+	Number(getgreditvalue);
+	 g2=(3*getgreditvalue);
+}
+function GetGredits3(getgreditvalue)
+{
+	Number(getgreditvalue);
+	 g3=(3*getgreditvalue);
+}
+function GetGredits4(getgreditvalue)
+{   
+	Number(getgreditvalue);
+	 g4=(3*getgreditvalue);
+}
+function GetGredits5(getgreditvalue)
+{
+	Number(getgreditvalue);
+	 g5=(4*getgreditvalue);
+}
+function GetGredits6(getgreditvalue)
+{   
+	Number(getgreditvalue);
+	 g6=(2*getgreditvalue);
+}
+function GetGredits7(getgreditvalue)
+{
+	Number(getgreditvalue);
+	 g7=(2*getgreditvalue);
+}
+function GetGredits8(getgreditvalue)
+{
+	Number(getgreditvalue);
+	 g8=(2*getgreditvalue);
+}
+function getPercentage()
+{
+	 tot=(g1+g2+g3+g4+g5+g6+g7+g8)/22;
+	 Number(tot);
+	//alert(tot);
+	document.getElementById("view1").value= tot;
+}
+//document.getElementById("view").value= tot;
+function changeColor(color)
+{
+document.getElementById('B').style.background=color;
+document.getElementById('my').style.background=color;
+}
+</script>
+</head>
+<body bgcolor="#8cff66" id="B" >
+<center>
+<table class="col">
+<tr><td bgcolor="" onmouseover="changeColor('#ff80d5')" onmouseout="changeColor('transparent')"><h2> Grade Points Average</h2></td></tr>
+<tr><td bgcolor="" onmouseover="changeColor('#ffff4d')" onmouseout="changeColor('transparent')"><h4>Master of Computer Application</h4></td></tr>
+<tr><td bgcolor="" onmouseover="changeColor('#80ccff')" onmouseout="changeColor('transparent')"><h5>Third Semester</h5></td></tr>
+</table>
+<table border="0px">
+<tr><th>SL No</th><th>Cource Code</th><th>Cource Title</th><th>Leter Grade</th></tr>
+<tr><td>1</td><td>MC5301</td><td>Advanced DataS tructures and Algorithms</td><td>
+<input type="radio" value="10" name="A1" onclick="GetGredits1(this.value)">O
+<input type="radio" value="9" name="A1" onclick="GetGredits1(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="A1" onclick="GetGredits1(this.value)">A
+<input type="radio" value="7" name="A1" onclick="GetGredits1(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="A1" onclick="GetGredits1(this.value)">B
+<input type="radio" value="0" name="A1" onclick="GetGredits1(this.value)">U
+
+</td></tr>
+<tr><td>2</td><td>MC5302</td><td>Computer Networks</td><td>
+<input type="radio" value="10" name="B1"onclick="GetGredits2(this.value)">O
+<input type="radio" value="9" name="B1" onclick="GetGredits2(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="B1" onclick="GetGredits2(this.value)">A
+<input type="radio" value="7" name="B1" onclick="GetGredits2(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="B1" onclick="GetGredits2(this.value)">B
+<input type="radio" value="0" name="B1" onclick="GetGredits2(this.value)">U
+
+</td></tr>
+<tr><td>3</td><td>MC5303</td><td>Web Programming
+Essentials</td><td>
+<input type="radio" value="10" name="C1"onclick="GetGredits3(this.value)">O
+<input type="radio" value="9" name="C1" onclick="GetGredits3(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="C1" onclick="GetGredits3(this.value)">A
+<input type="radio" value="7" name="C1" onclick="GetGredits3(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="C1" onclick="GetGredits3(this.value)">B
+<input type="radio" value="0" name="C1" onclick="GetGredits3(this.value)">U
+
+</td></tr>
+<tr><td>4</td><td>MC5304</td><td>Programming with JAVA</td><td>
+<input type="radio" value="10" name="D1" onclick="GetGredits4(this.value)">O
+<input type="radio" value="9" name="D1" onclick="GetGredits4(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="D1" onclick="GetGredits4(this.value)">A
+<input type="radio" value="7" name="D1" onclick="GetGredits4(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="D1" onclick="GetGredits4(this.value)">B
+<input type="radio" value="0" name="D1" onclick="GetGredits4(this.value)">U
+
+</td></tr>
+
+<tr><td>5</td><td>MC5305</td><td>Object Oriented Analysis and Design</td><td>
+<input type="radio" value="10" name="E1" onclick="GetGredits5(this.value)">O
+<input type="radio" value="9" name="E1" onclick="GetGredits5(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="E1" onclick="GetGredits5(this.value)">A
+<input type="radio" value="7" name="E1" onclick="GetGredits5(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="E1" onclick="GetGredits5(this.value)">B
+<input type="radio" value="0" name="E1" onclick="GetGredits5(this.value)">U
+
+</td></tr>
+<tr><td>6</td><td>MC5311</td><td>Data Structures and
+Algorithms Laboratory</td><td>
+<input type="radio" value="10" name="F1"  onclick="GetGredits6(this.value)">O
+<input type="radio" value="9" name="F1" onclick="GetGredits6(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="F1" onclick="GetGredits6(this.value)">A
+<input type="radio" value="7" name="F1" onclick="GetGredits6(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="F1" onclick="GetGredits6(this.value)">B
+<input type="radio" value="0" name="F1" onclick="GetGredits6(this.value)">U
+
+</td></tr>
+<tr><td>7</td><td>MC5312</td><td>Web Programming Laboratory</td><td>
+<input type="radio" value="10" name="G1" onclick="GetGredits7(this.value)">O
+<input type="radio" value="9" name="G1" onclick="GetGredits7(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="G1" onclick="GetGredits7(this.value)">A
+<input type="radio" value="7" name="G1" onclick="GetGredits7(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="G1" onclick="GetGredits7(this.value)">B
+<input type="radio" value="0" name="G1" onclick="GetGredits7(this.value)">U
+
+</td></tr>
+<tr><td>8</td><td>MC5313</td><td>Programming with JAVA Laboratory</td><td>
+<input type="radio" value="10" name="H1" onclick="GetGredits8(this.value)">O
+<input type="radio" value="9" name="H1" onclick="GetGredits8(this.value)">A<sup>+</sup>
+<input type="radio" value="8" name="H1" onclick="GetGredits8(this.value)">A
+<input type="radio" value="7" name="H1" onclick="GetGredits8(this.value)">B<sup>+</sup>
+<input type="radio" value="6" name="H1" onclick="GetGredits8(this.value)">B
+<input type="radio" value="0" name="H1" onclick="GetGredits8(this.value)">U
+
+</td></tr>
+
+</table><br>
+<input type="button" value="Calclate" name="calc" size="40" id="my" onclick="getPercentage();"><input  id="view1" size="30" ><br>
+</center>
+</body>
+</html>
